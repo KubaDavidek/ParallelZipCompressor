@@ -12,9 +12,9 @@ def scan_folder(folder, queue):
             queue.put(path)
 
 
-        cpu_count = os.cpu_count()
+    cpu_count = os.cpu_count()
 
-        # posleme "None" pro kaydz worker, aby vedeli, ze uz neni dalsi prace a ukonci se
-        for i in range(cpu_count):
-            queue.put(None)
+    # posleme "None" pro kaydz worker, aby vedeli, ze uz neni dalsi prace a ukonci se
+    for i in range(cpu_count):
+         queue.put(None)
 
