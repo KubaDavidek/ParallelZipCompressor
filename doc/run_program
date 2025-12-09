@@ -1,0 +1,12 @@
+jak spustit program
+----------------------
+
+v config.py si nastavime:
+INPUT_FOLDER - slozka, ktera se ma zipovat
+
+LOUTPUD_FOLDER - kam se ulozi zip
+
+FINAL_ZIP_NAME -nazev vysledneho zipu
+
+spusteni programu:
+py -m src.main
